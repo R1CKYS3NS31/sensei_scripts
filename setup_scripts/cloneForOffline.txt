@@ -1,0 +1,1 @@
+wget -r -p -U Mozilla --wait=10 --limit-rate=35K https://www.makeuseof.com

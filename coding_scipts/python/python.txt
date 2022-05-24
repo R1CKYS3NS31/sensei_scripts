@@ -1,0 +1,467 @@
+#What is Python?
+
+Python is a popular programming language. It was created in 1991 by Guido van Rossum.
+
+It is used for:
+
+    web development (server-side),
+    software development,
+    mathematics,
+    system scripting.
+#What can Python do?
+
+    Python can be used on a server to create web applications.
+    Python can be used alongside software to create workflows.
+    Python can connect to database systems. It can also read and modify files.
+    Python can be used to handle big data and perform complex mathematics.
+    Python can be used for rapid prototyping, or for production-ready software development.
+
+#Why Python?
+
+    Python works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc).
+    Python has a simple syntax similar to the English language.
+    Python has syntax that allows developers to write programs with fewer lines than some other programming languages.
+    Python runs on an interpreter system, meaning that code can be executed as soon as it is written. This means that prototyping can be very quick.
+    
+#Python Syntax compared to other programming languages
+
+    Python was designed to for readability, and has some similarities to the English language with influence from mathematics.
+    Python uses new lines to complete a command, as opposed to other programming languages which often use semicolons or parentheses.
+    Python relies on indentation, using whitespace, to define scope; such as the scope of loops, functions and classes. Other programming languages often use curly-brackets for this purpose.
+
+    Python can be treated in a procedural way, an object-orientated way or a functional way.
+
+#Python Install
+
+Many PCs and Macs will have python already installed.
+
+To check if you have python installed on a Windows PC, search in the start bar for Python or run the following on the Command Line (cmd.exe):
+
+$C:\Users\Your Name>python --version
+
+To check if you have python installed on a Linux or Mac, then on linux open the command line or on Mac open the Terminal and type:
+
+$python --version
+
+If you find that you do not have python installed on your computer, then you can download it for free from the following website: https://www.python.org/
+
+#Python Quickstart
+
+Python is an interpreted programming language, this means that as a developer you write Python (.py) files in a text editor and then put those files into the python interpreter to be executed.
+
+The way to run a python file is like this on the command line:
+
+$C:\Users\Your Name>python helloworld.py
+
+Where "helloworld.py" is the name of your python file.
+
+Let's write our first Python file, called helloworld.py, which can be done in any text editor.
+
+print("Hello, World!")
+
+Simple as that. Save your file. Open your command line, navigate to the directory where you saved your file, and run:
+$C:\Users\Your Name>python helloworld.py
+
+The output should read:
+Hello, World!
+
+Congratulations, you have written and executed your first Python program.
+
+#The Python Command Line
+
+To test a short amount of code in python sometimes it is quickest and easiest not to write the code in a file. This is made possible because Python can be run as a command line itself.
+
+Type the following on the Windows, Mac or Linux command line:
+
+$C:\Users\Your Name>python
+or
+$C:\Users\Your Name>python3
+
+From there you can write any python, including our hello world example from earlier in the tutorial:
+C:\Users\Your Name>python
+Python 3.6.4 (v3.6.4:d48eceb, Dec 19 2017, 06:04:45) [MSC v.1900 32 bit (Intel)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> print("Hello, World!")
+
+Which will write "Hello, World!" in the command line:
+
+|C:\Users\Your Name>python
+Python 3.6.4 (v3.6.4:d48eceb, Dec 19 2017, 06:04:45) [MSC v.1900 32 bit (Intel)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> print("Hello, World!")
+Hello, World!
+|
+
+Whenever you are done in the python command line, you can simply type the following to quit the python command line interface:
+>>>exit()
+
+$Python Indentations
+
+Where in other programming languages the indentation in code is for readability only, in Python the indentation is very important.
+
+Python uses indentation to indicate a block of code.
+Example
+if 5 > 2:
+  print("Five is greater than two!")
+
+Example
+if 5 > 2:
+print("Five is greater than two!")
+
+#>Comments
+
+Python has commenting capability for the purpose of in-code documentation.
+
+Comments start with a #, and Python will render the rest of the line as a comment:
+Example
+
+Comments in Python:
+#This is a comment.
+print("Hello, World!")
+
+Docstrings
+
+Python also has extended documentation capability, called docstrings.
+
+Docstrings can be one line, or multiline.
+
+Python uses triple quotes at the beginning and end of the docstring:
+Example
+
+Docstrings are also comments:
+"""This is a 
+multiline docstring."""
+print("Hello, World!")
+
+Creating Variables
+
+Unlike other programming languages, Python has no command for declaring a variable.
+
+A variable is created the moment you first assign a value to it.
+Example
+x = 5
+y = "John"
+print(x)
+print(y)
+
+Variables do not need to be declared with any particular type and can even change type after they have been set.
+Example
+x = 4 # x is of type int
+x = "Sally" # x is now of type str
+print(x)
+
+#Variable Names
+A variable can have a short name (like x and y) or a more descriptive name (age, carname, total_volume). Rules for Python variables:
+
+    A variable name must start with a letter or the underscore character
+    A variable name cannot start with a number
+    A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )
+    Variable names are case-sensitive (age, Age and AGE are three different variables)
+
+Remember that variables are case-sensitive
+
+#Output Variables
+
+The Python print statement is often used to output variables.
+
+To combine both text and a variable, Python uses the + character:
+Example
+x = "awesome"
+print("Python is " + x)
+
+You can also use the + character to add a variable to another variable:
+Example
+x = "Python is "
+y = "awesome"
+z =  x + y
+print(z)
+
+For numbers, the + character works as a mathematical operator:
+Example
+x = 5
+y = 10
+print(x + y)
+
+If you try to combine a string and a number, Python will give you an error:
+Example
+x = 5
+y = "John"
+print(x + y)
+
+#Python Numbers
+
+There are three numeric types in Python:
+
+    int
+    float
+    complex
+
+Variables of numeric types are created when you assign a value to them:
+Example
+x = 1    # int
+y = 2.8  # float
+z = 1j   # complex
+
+To verify the type of any object in Python, use the type() function:
+Example
+print(type(x))
+print(type(y))
+print(type(z))
+
+#Int
+
+Int, or integer, is a whole number, positive or negative, without decimals, of unlimited length.
+Example
+
+Integers:
+x = 1
+y = 35656222554887711
+z = -3255522
+
+print(type(x))
+print(type(y))
+print(type(z)) 
+
+#Float
+
+Float, or "floating point number" is a number, positive or negative, containing one or more decimals.
+Example
+
+Floats:
+x = 1.10
+y = 1.0
+z = -35.59
+
+print(type(x))
+print(type(y))
+print(type(z)) 
+
+Float can also be scientific numbers with an "e" to indicate the power of 10.
+Example
+
+Floats:
+x = 35e3
+y = 12E4
+z = -87.7e100
+
+print(type(x))
+print(type(y))
+print(type(z)) 
+
+#Complex
+
+Complex numbers are written with a "j" as the imaginary part:
+Example
+
+Complex:
+x = 3+5j
+y = 5j
+z = -5j
+
+print(type(x))
+print(type(y))
+print(type(z)) 
+
+#Specify a Variable Type
+
+There may be times when you want to specify a type on to a variable. This can be done with casting. Python is an object-orientated language, and as such it uses classes to define data types, including its primitive types.
+
+Casting in python is therefore done using constructor functions:
+
+    int() - constructs an integer number from an integer literal, a float literal (by rounding down to the previous whole number) literal, or a string literal (providing the string represents a whole number)
+    float() - constructs a float number from an integer literal, a float literal or a string literal (providing the string represents a float or an integer)
+    str() - constructs a string from a wide variety of data types, including strings, integer literals and float literals
+
+Example
+
+Integers:
+x = int(1)   # x will be 1
+y = int(2.8) # y will be 2
+z = int("3") # z will be 3
+
+Example
+
+Floats:
+x = float(1)     # x will be 1.0
+y = float(2.8)   # y will be 2.8
+z = float("3")   # z will be 3.0
+w = float("4.2") # w will be 4.2
+
+Example
+
+Strings:
+x = str("s1") # x will be 's1'
+y = str(2)    # y will be '2'
+z = str(3.0)  # z will be '3.0' 
+
+#String Literals
+
+String literals in python are surrounded by either single quotation marks, or double quotation marks.
+
+'hello' is the same as "hello".
+
+Strings can be output to screen using the print function. For example: print("hello").
+
+Like many other popular programming languages, strings in Python are arrays of bytes representing unicode characters. However, Python does not have a character data type, a single character is simply a string with a length of 1. Square brackets can be used to access elements of the string.
+Example
+
+Get the character at position 1 (remember that the first character has the position 0):
+a = "Hello, World!"
+print(a[1])
+
+Example
+
+Substring. Get the characters from position 2 to position 4:
+b = "Hello, World!"
+print(b[2:4])
+
+Example
+
+The strip() method removes any whitespace from the beginning or the end:
+a = " Hello, World! "
+print(a.strip()) # returns "Hello, World!" 
+
+Example
+
+The len() method returns the length of a string:
+a = "Hello, World!"
+print(len(a))
+
+Example
+
+The lower() method returns the string in lower case:
+a = "Hello, World!"
+print(a.lower())
+
+Example
+
+The upper() method returns the string in upper case:
+a = "Hello, World!"
+print(a.upper())
+Example
+
+The replace() method replaces a string with another string:
+a = "Hello, World!"
+print(a.replace("H", "J"))
+Example
+
+The split() method splits the string into substrings if it finds instances of the separator:
+a = "Hello, World!"
+print(a.split(",")) # returns ['Hello', ' World!'] 
+
+#Command-line String Input
+
+Python allows for command line input.
+
+That means we are able to ask the user for input.
+
+The following example asks for the user's name, then, by using the input() method, the program prints the name to the screen:
+Example
+
+demo_string_input.py
+print("Enter your name:")
+x = input()
+print("Hello, " + x)
+
+Save this file as demo_string_input.py, and load it through the command line:
+$C:\Users\Your Name>python demo_string_input.py
+
+Our program will prompt the user for a string:
+Enter your name:
+
+The user now enters a name:
+Linus
+
+Then, the program prints it to screen with a little message:
+Hello, Linus
+
+#Python Operators
+
+Operators are used to perform operations on variables and values.
+
+Python divides the operators in the following groups:
+
+    Arithmetic operators
+    Assignment operators
+    Comparison operators
+    Logical operators
+    Identity operators
+    Membership operators
+    Bitwise operators
+    
+#Python Arithmetic Operators
+
+Arithmetic operators are used with numerc values to perform common mathematical operations:
+Operator 	Name 	Example 
++ 	Addition 	x + y 	
+- 	Subtraction 	x - y 	
+* 	Multiplication 	x * y 	
+/ 	Division 	x / y 	
+% 	Modulus 	x % y 	
+** 	Exponentiation 	x ** y 	 
+// 	Floor division 	x // y 	 
+
+
+#Python Assignment Operators
+
+Assignment operators are used to assign values to variables:
+Operator 	Example 	Same As 	
+= 	x = 5 	x = 5 	
++= 	x += 3 	x = x + 3 	
+-= 	x -= 3 	x = x - 3 	
+*= 	x *= 3 	x = x * 3 	
+/= 	x /= 3 	x = x / 3 	
+%= 	x %= 3 	x = x % 3 	
+//= 	x //= 3 	x = x // 3 	
+**= 	x **= 3 	x = x ** 3 	
+&= 	x &= 3 	x = x & 3 	
+|= 	x |= 3 	x = x | 3 	
+^= 	x ^= 3 	x = x ^ 3 	
+>>= 	x >>= 3 	x = x >> 3 	
+<<= 	x <<= 3 	x = x << 3 	
+
+#Python Comparison Operators
+
+Comparison operators are used to compare two values:
+Operator 	Name 	Example 	
+== 	Equal 	x == y 	
+!= 	Not equal 	x != y 	
+> 	Greater than 	x > y 	
+< 	Less than 	x < y 	
+>= 	Greater than or equal to 	x >= y 	
+<= 	Less than or equal to 	x <= y 	
+
+#Python Logical Operators
+
+Logical operators are used to combine conditional statements:
+Operator 	Description 	Example 	Try it
+and  	Returns True if both statements are true 	x < 5 and  x < 10 	
+or 	Returns True if one of the statements is true 	x < 5 or x < 4 	
+not 	Reverse the result, returns False if the result is true 	not(x < 5 and x < 10) 	
+
+#Python Identity Operators
+
+Identity operators are used to compare the objects, not if they are equal, but if they are actually the same object, with the same memory location:
+Operator 	Description 	Example 	Try it
+is  	Returns true if both variables are the same object 	x is y 	
+is not 	Returns true if both variables are not the same object 	x is not y
+
+#Python Membership Operators
+
+Membership operators are used to test if a sequence is presented in an object:
+Operator 	Description 	Example 	Try it
+in  	Returns True if a sequence with the specified value is present in the object 	x in y 	
+not in 	Returns True if a sequence with the specified value is not present in the object 	x not in y
+
+#Python Bitwise Operators
+
+Logical operators are used to combine conditional statements:
+Operator 	Name 	Description
+&  	AND 	Sets each bit to 1 if both bits are 1
+| 	OR 	Sets each bit to 1 if one of two bits is 1
+ ^ 	XOR 	Sets each bit to 1 if only one of two bits is 1
+~  	NOT 	Inverts all the bits
+<< 	Zero fill left shift 	Shift left by pushing zeros in from the right and let the leftmost bits fall off
+>> 	Signed right shift 	Shift right by pushing copies of the leftmost bit in from the left, and let the rightmost bits fall off
+
+

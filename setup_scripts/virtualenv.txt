@@ -1,0 +1,30 @@
+linux/mac=
+python3 -m pip install --user --upgrade pip
+
+python3 -m pip --version
+
+python3 -m pip install --user virtualenv
+
+python3 -m venv env
+
+source env/bin/activate
+
+which python
+
+deactivate
+
+windows=
+py -m pip --version
+
+py -m pip install --upgrade pip
+
+py -m pip install --user virtualenv
+
+py -m venv env
+
+.\env\Scripts\activate
+
+where python
+
+deactivate
+

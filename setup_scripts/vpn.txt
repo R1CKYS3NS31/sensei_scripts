@@ -1,0 +1,8 @@
+export http_proxy=http://username:password@proxyhost:port/
+export https_proxy=https://username:password@proxyhost:port/ 
+export ftp_proxy=http://username:password@proxyhost:port/
+export telnet_proxy=http://username:password@proxyhost:port/
+ssh -o ProxyCommand='socat - SOCKS4A:myproxy:%h:%p,socksuser=nobody' user@host
+ssh -o ProxyCommand='socat - "SOCKS5:%h:%p|tcp:myproxy:1080"' user@host
+ssh -o ProxyCommand='socat - "PROXY:%h:%p|tcp:myproxy:80"' user@host
+

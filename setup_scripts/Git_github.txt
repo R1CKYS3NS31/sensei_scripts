@@ -1,0 +1,64 @@
+git --version
+#Git Install
+
+You can download Git for free from the following website: https://www.git-scm.com/
+
+
+
+
+git config --global user.name "DERRICKSONNDAMBUKI"
+git config --global user.email "derricksonndambuki@gmail.com"
+
+mkdir myproject
+cd myproject
+
+git init 
+
+
+#add html index.html
+ <!DOCTYPE html>
+<html>
+<head>
+<title>Hello World!</title>
+</head>
+<body>
+
+<h1>Hello world!</h1>
+<p>This is the first file in my new Git Repo.</p>
+
+</body>
+</html> 
+
+ls
+
+git status
+
+git add index.html
+git add .
+git add --all
+
+git commit -m "First release of Hello World!"
+
+
+
+The commit command performs a commit, and the -m "message" adds a message.
+
+git status --short
+
+git commit -a -m "Updated index.html with a new line"
+
+commit it directly:
+
+git log
+
+git remote add origin link
+git branch -M main
+git push -u origin main
+
+
+
+
+
+
+
+

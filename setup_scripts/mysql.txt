@@ -1,0 +1,11 @@
+
+
+# install mysql
+sudo apt-get install default-mysql-server default-mysql-server-core 
+
+# start service
+service mysql start
+
+||
+sudo dpkg-reconfigure mysql-apt-config
+https://dev.mysql.com/get/mysql-apt-config_0.8.22-1_all.deb

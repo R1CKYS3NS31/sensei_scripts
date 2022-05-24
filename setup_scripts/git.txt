@@ -1,0 +1,12 @@
+$git init->initialise/reinitialise
+$git add .
+$git commit -m "text file upload"
+#if error{
+    git config --global user.email "email@gmail.com"
+    git config --global user.name "anyname"
+    repeat from $1}
+    
+$git branch -M main||master
+$git remote add  main||master https://github.com/DERRICKSONNDAMBUKI/Django_NC
+$git push --set-upstream main||master main||master
+$git push -u main||master

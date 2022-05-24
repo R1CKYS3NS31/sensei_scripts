@@ -1,0 +1,57 @@
+activitities,fragments,intents,inflaterss
+navigation
+data binding,bindingadapter
+viewmodel,viewholder
+livedata,mutablelivdata,observer,savedinstancestates
+adapter
+recycler view,recyclerview adapterf,notifydatasetchange,diffutil,headers-spans
+layouts,view groups
+sqlite database,room.dao,coroutines
+network-internet,rest,uri,http protocols,json,retrofit,glide
+uses-permissions
+
+
+
+view group{
+   coordinator
+    linear
+    listview-(Adapterarray)||switch
+    Relative
+    Grid
+    recylerview
+    frame
+    table
+    absolute
+    }
+
+view{
+    Button
+    RadioButton
+    Checkbox
+    EditText
+    }
+    
+
+link button with
+    onClick()
+    onFocusChange()action from with nav keys
+    onLongClick()
+    onKey()
+    onTouch()
+nav-val i=Intent()
+    val i=Intent(i.ACTION_VIEW,Uri.parse("http://...")#implicit||
+    val i=Intent(i.ACTION_DIAL,Uri.parse("tel:")#implicit||
+    
+    val intentact=Intent(this@MainActivity,Activity2::class.java)||
+    i.action()="activitynameto"
+    
+    intentact.putExtra("Value1","This Activity two done  from kt code")
+    startActivity(i)||startService()||startBroadcast()
+    
+android developer{
+    design(html,java,javascript)
+    API
+    
+    }
+    
+    

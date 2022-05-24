@@ -1,0 +1,42 @@
+$ sudo snap install flutter --classic
+$ flutter sdk-path
+Add the flutter tool to your path:
+
+$ export PATH="$PATH:`pwd`/flutter/bin"
+$ flutter precache
+$ flutter doctor
+$ export PATH="$PATH:[PATH_TO_FLUTTER_GIT_DIRECTORY]/flutter/bin"
+$ echo $PATH
+$ which flutter
+$ which flutter dart
+    ||
+$ sudo nano /etc/profile
+Update the PATH string with the location of your Flutter SDK directory.
+
+if [ "`id -u`" -eq 0 ]; then
+   PATH="..."
+else
+   PATH="/usr/local/bin:...:[PATH_TO_FLUTTER_GIT_DIRECTORY]/flutter/bin"
+fi
+export PATH
+
+End the current session or reboot your system.
+$ which flutter
+for web=>
+ $flutter channel beta
+
+ $flutter upgrade
+
+ $flutter config --enable-web
+ $flutter devices
+ $flutter create myapp
+ $cd myapp
+ $flutter run -d chrome
+ $flutter build web
+  $flutter create . =>to add web to an existing app
+
+
+Note: for those who are facing the problem in Ubuntu and Android Studio is installed with snap:{
+$flutter config --android-studio-dir="/snap/android-studio/current/android-studio"}else edit your dir location of android-studio
+    ||
+$flutter config --android-studio-dir="/snap/android-studio/current/android-studio"

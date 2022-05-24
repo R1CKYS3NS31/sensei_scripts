@@ -1,0 +1,9 @@
+#list partitions
+$lsblk
+
+#unmount partition
+$sudo umount sdbx
+
+#boot into usb drive
+$sudo dd if=/home/rickysensei/Ricky_installs/kali-linux-2021.3a-installer-amd64.iso of=/dev/sdb1 bs=4M conv=fdatasync status=progress
+

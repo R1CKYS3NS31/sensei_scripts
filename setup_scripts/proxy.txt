@@ -1,0 +1,7 @@
+$visudo
+
+$Defaults env_reset 
+
+$Defaults env_keep = "http_proxy ftp_proxy"
+
+$Defaults env_keep = "http_proxy https_proxy ftp_proxy DISPLAY XAUTHORITY"

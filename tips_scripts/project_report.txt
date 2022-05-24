@@ -1,0 +1,65 @@
+pg1 =>{
+university
+school
+program
+course
+project title
+}
+ABSTRACT{
+history
+understanding of problem
+short why the project
+}
+ACKNOWLEDGEMENT{
+people involved
+
+}
+TABLE OF CONTENT{}
+TABLE OF FIGURES{}
+INTRODUCTION{
+Project Motivation
+Aims And Objectives
+Report Structure
+}
+DESCRIPTION OF CURRENT SITUATION OF PROJECT{
+Background
+Information Sources
+Feedback
+}
+PERSONAL OPINION ON THE PROJECT{}
+MATERIAL GATHERING
+CODES,ARCHITECTURE FLOW
+TESTS AND DEMO
+PROBLEMS
+CONCLUSION
+BIBLIOGRAPHY{
+General References
+Specific References
+Internet References
+}
+APPENDICES{
+Appendix 1: Project Plan Gantt Chart
+Appendix 2: Project Source Code
+}
+{
+Title Page
+Abstract
+Acknowledgements
+Table of Contents
+Table of Figures
+1.Introduction
+2.Background
+2.Problem Statement
+3.Specification
+4.Design
+5.Implementation
+6.Results and Evaluation
+7.Future Work
+8.Conclusions
+9.Reflection on Learning
+Glossary
+Table of Abbreviations
+Appendices
+References
+
+}

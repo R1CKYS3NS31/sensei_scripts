@@ -1,0 +1,7 @@
+$ sudo apt install openjdk-11-jdk
+$ sudo snap install --classic kotlin
+
+run:
+
+$ kotlinc hello.kt -include-runtime -d hello.jar
+$ java -jar hello.jar
