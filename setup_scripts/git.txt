@@ -10,3 +10,13 @@ $git branch -M main||master
 $git remote add  main||master https://github.com/DERRICKSONNDAMBUKI/Django_NC
 $git push --set-upstream main||master main||master
 $git push -u main||master
+
+||
+
+echo "# sensei_scripts" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin repo_link.git
+git push -u origin main
