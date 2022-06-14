@@ -1,0 +1,4 @@
+https://websiteforstudents.com/how-to-install-osticket-system-on-ubuntu-18-04-16-04-with-apache2/
+
+
+$sudo apachectl -t //check .conf synatax
