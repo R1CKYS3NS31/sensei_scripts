@@ -2,3 +2,8 @@ https://websiteforstudents.com/how-to-install-osticket-system-on-ubuntu-18-04-16
 
 
 $sudo apachectl -t //check .conf synatax
+
+# csrf token 
+catch (DoesNotExist $e) {
+        $this->data = new SessionData(['session_id' => $id]);
+        $this->data->session_data = ""; //add this line
