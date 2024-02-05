@@ -1,0 +1,1 @@
+curl -i http://0.0.0.0:9000/api/auth/signup -X POST --json '{"firstName":"test","lastName":"0","email":"test@mail.com","password":"123"}'

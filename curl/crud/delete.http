@@ -1,0 +1,1 @@
+curl -i http://0.0.0.0:9000/members/6560e235ac719abb80d7ad7b -X DELETE

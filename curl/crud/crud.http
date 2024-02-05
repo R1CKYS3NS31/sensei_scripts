@@ -1,0 +1,8 @@
+curl -i http://0.0.0.0:9000/api/auth/signup -X POST --json '{"firstName":"test","lastName":"2","email":"test2@mail.com","password":"123"}'
+
+
+curl -i http://0.0.0.0:9000/api/users
+
+curl -i http://0.0.0.0:9000/members/6560e235ac719abb80d7ad7b -X DELETE
+
+curl -i http://0.0.0.0:9000/api/auth/signup -X PUT --json '{"firstName":"test","lastName":"0","email":"test@mail.com","password":"123"}'

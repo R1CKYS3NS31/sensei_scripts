@@ -7,5 +7,27 @@ $ sudo sh -c 'echo "deb https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/$(ls
 $ sudo sh -c 'echo "deb https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/focal/ pgadmin4 main" > /etc/apt/sources.list.d/pgadmin4.list && apt update'
 $ sudo apt install pgadmin4
 
+# switch to postgres account
+$ sudo -i -u postgres
+postgres=# \du
+
+# new roll 
+psql# createuser --interactive
+
 #run via psql
 $ sudo psql -U postgres -h 0.0.0.0
+||
+$ sudo -u postgres psql
+
+# create new db
+$ sudo -u ricky_sensei createdb sensei_server_db;
+
+# connect to new db with new roll
+$ sudo -u ricky_sensei psql sensei_server_db
+
+$ sudo  psql -U user_name -d database_name -h 127.0.0.1 -W
+
+# change password
+psql# ALTER USER ricky_sensei WITH ENCRYPTED PASSWORD '';
+
+
